@@ -1,0 +1,126 @@
+*{
+    margin:0;
+    
+    /* border: 2px solid red; */
+    box-sizing: border-box;
+}
+.div-1,
+div{
+    width:100%; 
+}
+.main-div,.div-2,.div-4{
+
+    background: linear-gradient(30deg,#FFE400,white,#FFE400);
+}
+.main-div {
+    width: auto;
+}
+.div-1,.div-3{
+    background: linear-gradient(150deg,#FFE400,white,#FFE400);
+}
+.main-nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    margin:10px 0 10px 40px;
+}
+.navlink,.navlink button{
+    font-size: x-large;
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+}
+.navlink:hover,.navlink button:hover{
+    font-size: x-large;
+    text-decoration: underline;
+    color:rgb(7, 249, 188);
+}
+.navlink button{
+    color:aliceblue;
+    background:linear-gradient(45deg,#FAAB78,#D7E9B9);
+    border-radius: 30px;
+    width:180px;
+    height:60px;
+    margin-right:20px;
+}
+/*------------marquee tag------------------*/
+marquee a{
+    color: rgb(2, 137, 255);
+    text-decoration: none;
+    margin:0 50px;
+}
+/*--------------------info div----------------*/
+.info-div{
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    overflow-wrap: normal;
+    display: flex;
+    justify-content:center;
+    max-height:600px;
+    text-align: center;
+    align-items: center;
+}
+.info-div-r{
+
+}
+/*-------------h1 and p paragraph tag -----------*/
+.info-div-r h1,.div-1 h1,.div-2 h1,.div-3 h1,.div-4 h1{
+    font-size: 50px;
+}
+.info-div-r p,.sub-about-div p{
+    font-size: 20px;
+   
+}
+.info-image{
+    position: relative;
+}
+
+/*-----------image-----------------*/
+
+.sub-services-div a img{
+    display: inline;
+    width:350px;
+    height:350px;
+    margin:25% 0 0 0;
+    padding: 0 0 0 0;
+}
+/*-------------div 2------Services div--------------*/
+.sub-about-div,.div-2 h1{
+    margin:0 0 0 10%;
+    width: fit-content;
+    height: fit-content;
+    text-align: left;
+    padding-top: 5% 0 0 0;
+}
+.sub-services-div {
+    margin: 0 0 0 10%;
+    width: auto;
+    height:fit-content; 
+   display: flex;
+   float: left;
+    
+}
+
+.about-div{
+    padding: 5% 2%;
+    position:relative;
+    text-align: center;
+}
+.about-div .sub-about-div{
+    margin: 0;
+}
+
+@media screen and (max-width:600px){
+    .info-div {
+        display: block;
+        position: relative;
+    }
+    .main-nav a{
+        display: none;
+    }
+    .info-image {
+        width: 100%;
+    }
+}

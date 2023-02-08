@@ -1,0 +1,276 @@
+/*---------Universal(*) Selector It Select All Elements of a Webpage------------*/
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+   /* border: 2px solid black;*/
+}
+/*-----------(Body tag )Using This Tag We Will Able to Style body's All Elements------------*/
+body{
+    color:var(--yellow);
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+/*---------------all heading tag and paragraph tag ---------------*/
+#logo-name{
+    font-size: 200%;
+    left: 100%;
+}
+h1{
+    border-bottom:2px solid #00ffff;
+    border-top: 2px solid #00ffff;
+    text-align: center;
+    font-size: 400%;
+ 
+}
+h2{
+
+    font-size: 30px;
+}
+p{
+    display: inline-block;
+    font-size: 2rem;
+}
+/*---------------all heading tag and paragraph tag-end------------*/
+:root{
+    --button: #FFBB33;
+    --text-icon:#333333;
+    --green:#4CAF50;
+    --bg : #F5F5F5;
+    --border:#CCCCCC;
+    --btn:#00ffff;
+}
+/*-----------------Giving all div background color  and size like height and width--------*/
+.div-1,.div-3{
+    background: whitesmoke;/* linear-gradient(30deg,#413b05,white,#FFE400);*/
+    min-height: 100vh;
+
+    width: 100%;
+    overflow: hidden;
+
+}
+.item{
+    text-align:center;
+}
+p .ser{
+ text-align: center;
+}
+.div-2,.div-4,.div-0{
+    background: snow;/*linear-gradient(30deg,#FFE400,white,#FFE400);*/
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+/*-------------------------div-0-start--------------------*/
+
+/*-----------------nav-bar-start---------------*/
+.logo{
+  width:60px;
+}
+@media (width<466px) {
+    #logo-name{
+        text-align: center;
+    }
+     .navlink{
+       display: none;
+    }
+}
+.div-0 nav{
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+    padding:20px 0 0 0;
+}
+.div-0 nav h1,.div-0 nav a{
+    text-decoration: none;
+    scroll-behavior: smooth;
+    color: var(--text-icon);
+}
+/*----------Anchor-tag-hover-effect------*/
+.div-0 nav a:hover{
+    border-bottom: 2px solid var(--btn);
+}
+/*------button-start------*/
+.div-0 nav a button{
+    border: 2px solid #00ffff;
+    font-size: 1.5rem;
+padding: 3% 5%;
+background-color: white;
+color:#00ffff;
+border-radius: 20px;
+}
+.div-0 nav a button:hover{
+    background-color: var(--btn);
+    color: var(--bg);
+    border: 2px solid var(--btn);
+    stroke: 10px solid dodgerblue;
+}
+/*-----button-end----*/
+/*-----------------nav-bar-end-----------------*/
+
+/*-----------------marquee-tag---------------*/
+marquee{
+    background-color: antiquewhite;
+}
+
+/*----------------hero-div-------------------*/
+.div-0-hero-div{
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    justify-content: space-around;
+    align-items: center;
+}
+@media (width<668px) {
+    .div-0-hero-div{
+        display: flex;
+        flex-direction: column;
+    }
+}
+.main-img{
+    align-items: center;
+    display: inline-block;
+    min-width: 10%;
+    max-width: 400px;
+}
+@media (width<462) {
+    .main-img{
+        padding:5% 5%;
+    }
+}
+.info-div-r{
+    padding: 5% 5%;
+    text-align: center;
+}
+
+/*-------------------------div-0-end--------------------*/
+
+/*-------------------------div-1-start------------------*/
+.div-1{
+   padding: 5% 5%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub-div-1{
+    max-width: fit-content;
+    height: fit-content;
+    border-radius: 20px;
+    background-color: var(--text-icon);
+    opacity: 0.5;
+    transition: opacity 0.5s ease-in-out;
+    color: var(--bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:10%;
+    gap: 3;
+}
+.sub-div-1:hover{
+    max-width: fit-content;
+    height: fit-content;
+    border-radius: 20px;
+    background-color: var(--text-icon);
+    color: var(--bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:10%;
+}
+.sub-div-1 h1{
+    margin-bottom: 10%;
+}
+
+/*----------------------div-2-tag-------------------------*/
+.div-2{
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.sub-div-2{
+  display: flex;
+  flex-direction: column;
+  max-width: max-content;
+}
+
+.sub-div-2 .item img{
+    padding: 5%;
+    position: relative;
+    display: inline-block;
+    justify-content: space-evenly;
+    max-width: 100%;
+}
+.ser{
+   margin: 0 auto;
+}
+.serv{
+    width:400px;
+    padding: 0 3rem;
+}
+@media (width<816px) {
+    .ser{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.serv-t{
+   display: flex;
+   
+}
+.text{
+    padding:5%;
+}
+
+
+/*
+.sub-div-2-img a{
+    max-width: fit-content;
+    text-align: center;
+    margin: 0 1rem 0 1rem;
+}
+.sub-div-2-img a img{
+    display:inline-block;
+    min-width: 25%;
+    max-width: fit-content;
+}
+/*-------------text below imges-------*/
+/*
+.sub-div-2-img h2{
+    display: inline-block;
+    justify-content: center;
+}*/
+.sub-projects-div{
+    display: flex;
+
+}
+.proj{
+    width:200px;
+}
+@media (width<4) {
+    .div-3{
+        display: flex;
+        flex-direction: column;
+        padding:5%;
+    }
+}
+
+.pro{
+    padding: 5%;
+    width:400px;
+}
+
+
+
+/*---------------------Get in touch Div---------------*/
+.git{
+    padding:5% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
