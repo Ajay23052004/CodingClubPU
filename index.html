@@ -17,31 +17,20 @@
 <!------------------------Body Start------------------------------------------------------------------------------->
 
 <body>
-  <!--[1]--------------------Main-div(First-page)-Start--------------------------------->
-  <div class="main-div div-0">
-    <nav class="main-nav nav-bar">
-      <img class="logo" id="logo" src="images/apple-touch-icon.png" alt="logo">
-      <h1 class="logo-name" id="logo-name">CODING CLUB</h1>
-      <a href="#about" class="navlink">About</a>
-      <a href="#services" class="navlink">Services</a>
-      <a href="#projects" class="navlink">Projects</a>
-      <a href="#getintouch" class="navlink"><button>Get In Touch </button></a>
-    </nav>
-    <div class="info-div div-0-hero-div">
-      <img class="info-image main-img" id="hero " src="images/android-chrome-512x512.png" alt="">
-      <div class="info-div-r">
 
-        <h1>"Hello and welcome!"</h1><br>
-        <h2>It's great to have you here.</h2>
-        <br><br>
-        <p>"Empowering the Next Generation of Coders: Coding Club" </p>
+  <nav>
+    <div class="drop">
+      <img class="brand" src="images/apple-touch-icon.png" alt="logo">
+      <span class="brand-name hidden">CODING CLUB</span>
+      <a id="dropbtn" href="javascript:void(0);" onclick="dropdown()">&#9776;</a>
+      <div class="drop-container">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#getintouch" class="navbtn">Get In Touch</a>
       </div>
-
-
     </div>
-
-  </div>
-  <!---------------------main-div(First-page)-End------------------------------------->
+  </nav>
 
   <!--[2]-------------------About-div(Second-page)-Start--------------------------------->
 
@@ -53,7 +42,7 @@
         students to tackle challenges and improve your understanding of computer programming. Whether you're just
         starting out or you're already well-versed in coding, we welcome you to join us and be a part of our community.
         Our mission is to help you grow as a programmer and make the most of your potential. Let's start coding!
-        </p>
+      </p>
     </div>
   </div>
 
@@ -105,20 +94,28 @@
   <!--[5]-------------------Getintouch-div(Fifth-page)-Start-------------------------------->
   <div id="getintouch" class="getintouch div-4">
     <h1>Get In Touch</h1>
-  <!-- -------------------Getintouch-div(Fifth-page)-Start-------------------------------->
-  <div class="div-3">
-    <div class="git">
-    <h2 class="">"Feel free to reach out to us on our social media platforms. Whether you have a question, suggestion, or just
-      want to connect with our community,We look forward to hearing from you!"</h2>
+    <!-- -------------------Getintouch-div(Fifth-page)-Start-------------------------------->
+    <div class="div-3">
+      <div class="git">
+        <h2 class="">"Feel free to reach out to us on our social media platforms. Whether you have a question,
+          suggestion, or just
+          want to connect with our community,We look forward to hearing from you!"</h2>
 
-    <a href="mailto:Codingclub@gmail.com" target="_blank"><img src="icon/🦆 icon _email_.png" alt="" class="social"></a>
-    <a href="https://www.facebook.com/aj.style.739?mibextid=ZbWKwL" target=""><img src="icon/🦆 icon _facebook_.png" alt="" class="social"></a>
-    <a href="https://instagram.com/ajay_muniya23?igshid=YzgyMTM2MGM= " target="_blank"><img src="icon/🦆 icon _instagram_.png" alt="" class="social"></a>
-    <a href="https://www.linkedin.com/company/codingclub36/" target="_blank"><img src="icon/🦆 icon _linkedin_.png" alt="" class="social"></a>
-    <a href="https://twitter.com/AjayMuniya04?t=1J6RMGD16oegQ3f8IAO-TQ&s=09" target="_blank"><img src="icon/🦆 icon _twitter_.png" alt="" class="social"></a>
-  </div>
-</div>
-<div style="text-align: center; background-color: lightgrey;">©️Coding Club 2023</div>
+        <a href="mailto:Codingclub@gmail.com" target="_blank"><img src="icon/🦆 icon _email_.png" alt=""
+            class="social"></a>
+        <a href="https://www.facebook.com/aj.style.739?mibextid=ZbWKwL" target=""><img src="icon/🦆 icon _facebook_.png"
+            alt="" class="social"></a>
+        <a href="https://instagram.com/ajay_muniya23?igshid=YzgyMTM2MGM= " target="_blank"><img
+            src="icon/🦆 icon _instagram_.png" alt="" class="social"></a>
+        <a href="https://www.linkedin.com/company/codingclub36/" target="_blank"><img src="icon/🦆 icon _linkedin_.png"
+            alt="" class="social"></a>
+        <a href="https://twitter.com/AjayMuniya04?t=1J6RMGD16oegQ3f8IAO-TQ&s=09" target="_blank"><img
+            src="icon/🦆 icon _twitter_.png" alt="" class="social"></a>
+      </div>
+    </div>
+    <div style="text-align: center; background-color: lightgrey;">©️Coding Club 2023</div>
+
+    <script src="drop.js"></script>
 </body>
 <!------------------------Body End------------------------------------------------------------------------------->
 
